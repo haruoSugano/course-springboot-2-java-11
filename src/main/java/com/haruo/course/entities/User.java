@@ -17,14 +17,15 @@ public class User implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
+	private String email;
 	private String phone;
 	private String password;
-	private String email;
+	
 	
 	public User() {
 	}
 
-	public User(Long id, String name, String phone, String email, String password) {
+	public User(Long id, String name, String email, String phone,  String password) {
 		this.id = id;
 		this.name = name;
 		this.phone = phone;
